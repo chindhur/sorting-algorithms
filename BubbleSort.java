@@ -1,5 +1,6 @@
 class BubbleSort {
-    void bubbleSort(int arr[]) {
+    /*function to sort array using Bubblesort*/
+    void bubbleSort(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
@@ -13,7 +14,7 @@ class BubbleSort {
         }
     }
     //prints the array
-    void printArray(int arr[])
+    void printArray(int[] arr)
     {
         int n = arr.length;
         for (int i = 0; i < n; ++i)
@@ -22,10 +23,10 @@ class BubbleSort {
     }
 
     //driver method
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         BubbleSort ob = new BubbleSort();
-        int arr[] = { 34,87,69,101,96,12,2,11 };
+        int[] arr = { 34,87,69,101,96,12,2,11 };
         ob.bubbleSort(arr);
         System.out.println("Sorted array");
         ob.printArray(arr);
