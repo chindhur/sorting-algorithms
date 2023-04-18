@@ -2,7 +2,7 @@ public class SelectionSort {
     // Driver code
     public static void main(String[] args) {
         SelectionSort selectionSort = new SelectionSort();
-        int[] arr = {92,1,84,21,67,88,38};
+        int[] arr = {92, 1, 84, 21, 67, 88, 38};
         selectionSort.sort(arr);
         System.out.println("Sorted array");
         selectionSort.printArray(arr);
@@ -13,10 +13,10 @@ public class SelectionSort {
         int n = arr.length;
 
         /*To move unsorted subarray one after the other*/
-        for (int i = 0; i < n-1; i++) {
+        for (int i = 0; i < n - 1; i++) {
             /* To Find the minimum element in unsorted array*/
             int min = i;
-            for (int j = i+1; j < n; j++) {
+            for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[min]) {
                     min = j;
                 }
@@ -32,7 +32,7 @@ public class SelectionSort {
     /* Prints the array*/
     private void printArray(int[] arr) {
         int n = arr.length;
-        for (int i=0; i<n; ++i) {
+        for (int i = 0; i < n; ++i) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();

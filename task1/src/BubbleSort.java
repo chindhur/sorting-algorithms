@@ -7,6 +7,7 @@ class BubbleSort {
         System.out.println("Sorted array");
         bubbleSort.printArray(arr);
     }
+
     /*function to sort array using bubblesort*/
     public void bubbleSort(int[] arr) {
         int n = arr.length;
